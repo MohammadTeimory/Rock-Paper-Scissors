@@ -29,4 +29,4 @@
 
 ## نویسنده
 
-این پروژه توسط [Your Name](https://github.com/username) توسعه داده شده است.
+این پروژه توسط [Mohammad Teimory](https://github.com/MohammadTeimory) توسعه داده شده است.
