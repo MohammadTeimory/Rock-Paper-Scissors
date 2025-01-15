@@ -29,9 +29,9 @@ updateScore();
 // Function to get result using Object Mapping
 function getGameResult(playerMove, computerMove) {
   const outcomes = {
-    rock: { rock: "Tie.", paper: "You Lose.", scissors: "You Win." },
-    paper: { rock: "You Win.", paper: "Tie.", scissors: "You Lose." },
-    scissors: { rock: "You Lose.", paper: "You Win.", scissors: "Tie." },
+    rock: { rock: "Tie. 😐", paper: "You Lose. 😢", scissors: "You Win. 🎉" },
+    paper: { rock: "You Win. 🎉", paper: "Tie. 😐", scissors: "You Lose. 😢" },
+    scissors: { rock: "You Lose. 😢", paper: "You Win. 🎉", scissors: "Tie. 😐" },
   };
   return outcomes[playerMove][computerMove];
 }
@@ -49,9 +49,9 @@ function playGame(playerMove) {
 
   //*update score*
 
-  result === "You Win." && score.wins++;
-  result === "You Lose." && score.losses++;
-  result === "Tie." && score.ties++;
+  result === "You Win. 🎉" && score.wins++;
+  result === "You Lose. 😢" && score.losses++;
+  result === "Tie. 😐" && score.ties++;
 
   localStorage.setItem("score", JSON.stringify(score));
 
