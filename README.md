@@ -23,7 +23,7 @@
 ## دموی زنده
 
 برای مشاهده دموی زنده این پروژه، می‌توانید به لینک زیر مراجعه کنید:
-[Live Demo](https://username.github.io/repository-name)
+[Live Demo](https://mohammadteimory.github.io/rock-paper-scissors/)
 
 ---
 
