@@ -31,7 +31,11 @@ function getGameResult(playerMove, computerMove) {
   const outcomes = {
     rock: { rock: "Tie. 😐", paper: "You Lose. 😢", scissors: "You Win. 🎉" },
     paper: { rock: "You Win. 🎉", paper: "Tie. 😐", scissors: "You Lose. 😢" },
-    scissors: { rock: "You Lose. 😢", paper: "You Win. 🎉", scissors: "Tie. 😐" },
+    scissors: {
+      rock: "You Lose. 😢",
+      paper: "You Win. 🎉",
+      scissors: "Tie. 😐",
+    },
   };
   return outcomes[playerMove][computerMove];
 }
@@ -41,6 +45,13 @@ function pickComputerMove() {
   const moves = ["rock", "paper", "scissors"];
   return moves[Math.floor(Math.random() * moves.length)];
 }
+
+// keydownListener
+document.body.addEventListener("keydown", (event) => {
+  event.key === "r" && playGame("rock");
+  event.key === "p" && playGame("paper");
+  event.key === "s" && playGame("scissors");
+});
 
 // Main Game Function
 function playGame(playerMove) {
